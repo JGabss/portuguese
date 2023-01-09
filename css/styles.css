@@ -1,0 +1,40 @@
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'MedievalSharp', cursive;
+    color: whitesmoke;
+    font-size: 36px;
+    background: linear-gradient(#080a0f, #12171d);   
+}
+
+.question {
+    width: 60%;
+    text-align: justify;
+    margin: 5% auto 4% auto;
+}
+
+.alternatives {
+    margin-top: 4%;
+    padding: 0 10% 0 10%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.center, #cats {
+    display: flex;
+    justify-content: center;
+}
+
+.line {
+    height: 1px;
+    width: 80%;
+    margin-top: 27px;
+    margin-right: 5%;
+    margin-left: 5%;
+    background-color: white;
+    border-radius: 2.5px;
+}

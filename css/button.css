@@ -1,0 +1,92 @@
+.custom-btn {
+    width: 250px;
+    font-family: 'MedievalSharp', cursive;
+    height: 120px;
+    color: #fff;
+    padding: 10px 25px;
+    font-weight: 500;
+    cursor: pointer;
+    background: transparent; 
+    transition: all .5s ease;
+    position: relative;
+    display: inline-block;
+    
+
+    box-shadow: 2px 2px 60px -10px rgba(255,255,255,0.86);
+    -webkit-box-shadow: 2px 2px 60px -10px rgba(255,255,255,0.86);
+    -moz-box-shadow: 2px 2px 60px -10px rgba(255,255,255,0.86);
+
+    outline: none;  
+}
+
+.submit-btn {
+    border-radius: 2.5px;
+    font-size: 20px;
+    background: rgb(28, 29, 34);
+    background: linear-gradient(0deg, rgb(20, 21, 22) 0%, rgb(14, 16, 17) 100%);
+    line-height: 42px;
+    padding: 0;
+    border: none;
+}
+
+.submit-btn span {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+.submit-btn:before,
+.submit-btn:after {
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 0;
+     background: rgba(2,126,251,1);
+    transition: all .5s ease;
+}
+.submit-btn:before {
+    height: 0%;
+    width: 2px;
+}
+
+.submit-btn:after {
+    width: 0%;
+    height: 2px;
+}
+.submit-btn:hover{
+    background: transparent;
+    box-shadow: none;
+    transition: all .5s ease;
+}
+.submit-btn:hover:before {
+    height: 100%;
+}
+.submit-btn:hover:after {
+    width: 100%;
+}
+.submit-btn span:hover{
+     color: rgba(2,126,251,1);
+}
+.submit-btn span:before,
+.submit-btn span:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    background: rgba(2,126,251,1);
+    transition: all .5s ease;
+}
+.submit-btn span:before {
+    width: 2px;
+    height: 0%;
+}
+.submit-btn span:after {
+    width: 0%;
+    height: 2px;
+}
+.submit-btn span:hover:before {
+    height: 100%;
+}
+.submit-btn span:hover:after {
+    width: 100%;
+}

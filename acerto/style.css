@@ -1,0 +1,18 @@
+.next {
+    border-radius: 2.5px;
+    padding: 2px 20px;
+    font-size: 20px;
+    background: linear-gradient(0deg, rgba(2,126,251,1) 0%, rgb(51, 112, 190) 100%);;
+    line-height: 42px;
+    cursor: pointer;
+    border: none;
+    color: white;
+    font-family: 'MedievalSharp', cursive;
+    transition: all ease .5s;
+}
+
+.next:hover {
+    box-shadow: 2px 2px 60px -10px rgba(255,255,255,0.86);
+    -webkit-box-shadow: 2px 2px 60px -10px rgba(255,255,255,0.86);
+    -moz-box-shadow: 2px 2px 60px -10px rgba(255,255,255,0.86);
+}
