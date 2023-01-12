@@ -50,8 +50,11 @@ var number_question = sessionStorage.getItem("number_question");
 if (number_question == null) {
     number_question = "1"
 }
-
-text.innerHTML = questions[number_question][0]
+try {
+    text.innerHTML = questions[number_question][0]
+} catch (e) {
+    window.location.pathname = "C:/Users/joseg/OneDrive/Documentos/IFPB/port/endgame.html"
+}
 
 a1.innerHTML = questions[number_question][1][0]
 a2.innerHTML = questions[number_question][1][1]

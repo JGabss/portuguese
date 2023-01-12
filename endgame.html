@@ -4,10 +4,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <title>Quiz</title>
 </head>
 <body>
-    cabo querido
-    
+    <div style="text-align: center;">
+        
+        <img src='imgs/gatineo.jpeg' alt='' style="margin-top: 3%;box-shadow: 2px 2px 190px -54px rgba(255,255,255,0.66);-webkit-box-shadow: 2px 2px 190px -29px rgb(255 255 255 / 66%);-moz-box-shadow: 2px 2px 190px -54px rgba(255,255,255,0.66);">
+    </div>
+    <div id="app" style="margin-top: 5%; text-align: center; font-size: 24px;"></div>
+
+    <script>
+        var app = document.getElementById('app');
+
+
+
+        var typewriter = new Typewriter(app, {
+            loop: false,
+            delay: 50
+        });
+
+        typewriter.typeString('E assim é terminada nossa história, com um cadáver, um preso e um gato, se você venceu parabéns, se não, tudo bem, a vitória e a derrota são subjetivas. Assim como homem que se sentiu vencedor com o quase salvamento da pena, mas no fim não tardará a encontrar sua esposa para uma derradeira dança de mãos dadas com ela e com morte, ademais, caro amigo também nos juntaremos algum dia a eles, não sendo importante a vitória ou a derrota, sendo válido apenas o motivo, uma lâmina que transpassa um crânio, a fome, a doença mal curada, ou um escorregão qualquer. Bom... até mais e obrigado.')
+        .start();
+
+    </script>
 </body>
 </html>
