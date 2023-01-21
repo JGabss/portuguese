@@ -17,3 +17,7 @@ setTimeout(() => {
 }, 1800)
 
 app.style.marginTop = "5%";
+
+setTimeout(() => {
+    window.location.pathname = "C:/Users/joseg/OneDrive/Documentos/IFPB/port/index.html"
+}, 5000) 

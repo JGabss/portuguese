@@ -5,26 +5,34 @@ function Validation (value) {
     
     if (value == num) {
         window.location.pathname = "C:/Users/joseg/OneDrive/Documentos/IFPB/port/acerto/acerto.html"
+        sessionStorage.setItem("number_question", `${parseInt(number_question) + 1}`)
     } else {
         sessionStorage.setItem("lifes", `${parseInt(lifes) - 1}`)
         window.location.pathname = "C:/Users/joseg/OneDrive/Documentos/IFPB/port/jumpscare/jumpscare.html"
     }
 
-    sessionStorage.setItem("number_question", `${parseInt(number_question) + 1}`)
 }
 
 const questions = {
     "1": ["casar-se jovem com uma garota que possui caráter adequado ao seu?", ["SIM", "NÃO", "SOMENTE NO FUTURO"], 0],
 
-    "2": ["Era o meu preferido e companheiro. Só eu lhe dava de comer e ele me acompanhava por toda a parte da casa, por onde eu andasse. De quem o protagonista está falando?", ["Do cachorro amigável", "Do gato chamado Plutão","Do macaquinho"], 1],
+    "2": ["'Era o meu preferido e companheiro. Só eu lhe dava de comer e ele me acompanhava por toda a parte da casa, por onde eu andasse'. De quem o protagonista está falando?", ["Do cachorro amigável", "Do gato chamado Plutão","Do macaquinho"], 1],
 
-    "3": ["Certa noite, de volta a casa, bastante embriagado, de uma das tascas dos subúrbios, supus que o gato evitava minha presença. O que fazer?", ["Pegar o gato", "Deixa-lo em paz", "fazer carinho"], 0]
+    "3": ["Certa noite, de volta a casa, bastante embriagado, de uma das tascas dos subúrbios, supus que o gato evitava minha presença. O que fazer?", ["Pegar o gato", "Deixa-lo em paz", "fazer carinho"], 0],
+
+    "4": ["Você está disposto a cometer um pecado mortal que condenará sua alma?", ["Não", "Sim", "Deus me livre"], 1],
+    "5": ["voltar na casa para ver os escombros?",  ["Outro dia", "Sim", "Não"], 1],
+    "6": ["Em uma noite, ele saiu e avistou, em cima de barris, um gato preto e grande, tão grande quanto Plutão.", ["Ignora-lo", "Chuta-lo", "Leva-lo para casa"], 2],
+    "7": ['"Certo dia ela me acompanhou, para alguma tarefa doméstica, até a adega do velho prédio que nossa pobreza nos compelira a ter de habitar. O gato desceu os degraus seguindo-me e quase me lançou ao chão." O que fazer ?', ["Prender o gato na coleira",  "Continuar andando", "Dar golpe fatal"], 2],
+    "8": ["como enterrar um corpo?", ["Parti-lo em pedaços e queimar", "empareda-lo", "enterrar no jardim"], 1],
+    "9": ["falar com os policiais antes deles irem embora ?", ["Não, Sim, Oferecer um café"], 0]
+
 };
 
 var lifes = sessionStorage.getItem("lifes")
 if (lifes == null) {
-    lifes = 3
-    sessionStorage.setItem("lifes", 3)
+    lifes = 2
+    sessionStorage.setItem("lifes", 2)
 } else if (lifes == 0) {
     window.location.pathname = "C:/Users/joseg/OneDrive/Documentos/IFPB/port/endgame.html"
 }
